@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="preload" href="./fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -23,7 +21,7 @@
       <a href="#top" class="header__logo">
         <img src="./images/logo-black.svg" alt="Оно тебе надо">
       </a>
-      <address class="header__contacts">
+      <address class="contacts header__contacts">
         <a href="tel:+99995555555">+9 999 555 55 55</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
         <span>наб. Принсенграхт 263-<br>265, Амстердам</span>
@@ -34,39 +32,42 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text_left">ОНО</span>
-          <span class="aligned-text_center">ТЕБЕ</span>
-          <span class="aligned-text_right">НАДО</span>
+          <span class="aligned-text_left">оно</span>
+          <span class="aligned-text_center">тебе</span>
+          <span class="aligned-text_right">надо</span>
         </h1>
         <div class="cover__discription">
           <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
-          <a href="#lots" class="bet__button">Сделать ставку</a>
+          <button type="button" class="bet__button">Сделать ставку</button>
         </div>
       </section>
 
       <section id="lots" class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item card_type_movie">
+          <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card">
+              <article class="card card_type_movie">
+                <div class="overlay"></div>
                 <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                 <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_book">
+          <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
                 <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
                 </p>
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_picture">
+          <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
                 <h3 class="card__title">Картина, которую повторит даже 5‑летний сын маминой подруги</h3>
                 <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
               </article>
@@ -92,7 +93,7 @@
     </main>
 
     <footer class="footer">
-      <address class="address">
+      <address class="contacts footer_contacts">
         <a href="tel:+99995555555">+9 999 555 55 55</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
         <span>наб. Принсенграхт 263-265,<br> Амстердам</span>

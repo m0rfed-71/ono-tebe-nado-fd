@@ -34,7 +34,7 @@
   }
   
   .header__contacts,
-  .address {
+  .footer_contacts {
     font-family: Raleway;
     color: rgba(0, 0, 0, 1);
     font-size: 18px;
@@ -47,7 +47,7 @@
   }
   
   .header__contacts a, 
-  .address a {
+  .footer_contacts a {
     font-style: normal;
     text-decoration: underline;
     line-height: 24px;
@@ -58,23 +58,15 @@
   .cover {
     position: relative;
     min-height: 757px;
-    padding: 165px 50px 50px;
     color: #fff;
+    background: url('../images/cover.jpg') center/cover no-repeat;
   }
   
   .overlay {
     position: absolute;
     inset: 0;
-    background: url('../images/cover.jpg') center/cover no-repeat;
-    filter: brightness(0.6);
-  }
-  
-  .cover::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: #000;
-    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
   }
   
   .cover__title {
@@ -84,32 +76,27 @@
     line-height: 117px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
+    z-index: 1;
   }
   
   .aligned-text_left {
+    display: flex;
     text-align: left;
-    position: absolute;
-    top: 165px;
-    left: 50px;
-    display: block;
+    padding-top: 165px;
+    padding-left: 50px;    
   }
   
   .aligned-text_center {
-    position: absolute;
+    text-align: center;
     top: 300px;
-    right: 380.5px;
+    padding-right: 380.5px;
+    display: flex;
   }
-  
+
   .aligned-text_right {
-    text-align: right;
-    position: absolute;
-    top: 435px;
-    right: 50px;
-    display: block;
-  }
-  
-  .cover__title-line {
-    display: block;
+    padding-top: 435px;
+    color: #000;
+    
   }
   
   .cover__discription {
@@ -140,6 +127,7 @@
     padding: 12px 32px 11px;
     border: 1px solid #fff;
     color: #fff;
+    background: transparent;
     font-family: Raleway;
     font-size: 22px;
     font-weight: 500;
