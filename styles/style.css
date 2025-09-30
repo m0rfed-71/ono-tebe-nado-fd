@@ -24,7 +24,7 @@
     list-style: none;
   }
 
-  .header__links-list-item-active {
+  .header__link_active {
     text-decoration: none;
   }
 
